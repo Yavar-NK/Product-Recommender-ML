@@ -24,7 +24,15 @@ You can run the complete analysis, train the model, and test the recommendations
 - **Data Engineering:** Handled 24.9% missing values in `CustomerID` and filtered out cancelled transactions (InvoiceNo starting with 'C') to ensure data quality.
 - **Optimization:** Tuned the Word2Vec model with `negative sampling=15` and `min_count=2` to capture meaningful associations even for less frequent items.
 
-## 🚀 How to Run
-1. **Clone the repository:**
+## 📂 Structure & 🚀 Quick Start
+
+### Project Organization
+- `Product_Recommendations_using_word2vec.ipynb`: Full R&D notebook.
+- `preprocess.py` & `train.py`: Data cleaning and model training logic.
+- `predict.py`: Real-time inference script.
+
+### How to Run
+1. **Clone & Install:**
    ```bash
    git clone [https://github.com/Yavar-NK/Product-Recommender-ML.git](https://github.com/Yavar-NK/Product-Recommender-ML.git)
+   pip install -r requirements.txt
