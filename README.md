@@ -1,3 +1,8 @@
+## 🔗 Interactive Demo
+Explore the neural embeddings and test the recommendation engine directly in Google Colab:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1p5cUPRro3EyT1b8wAz_Em3HuAHzK82fL)
+
 # Product Recommendation System Pipeline
 
 This repository contains a modular Machine Learning pipeline designed to provide product recommendations based on historical retail data.
