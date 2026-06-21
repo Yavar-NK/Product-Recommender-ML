@@ -25,6 +25,46 @@ A modular, production-grade Machine Learning pipeline that leverages NLP embeddi
 ├── .gitignore           # Git exclusions for models and cache layers
 └── requirements.txt     # Locked project dependencies
 ```
+## 📊 Research, Insights & Visualizations
+
+We conducted a deep dive into the transaction data using a dedicated research notebook to understand customer behavior and evaluate the semantic quality of our recommendation system.
+
+### 🚀 Interactive Notebook
+You can access and run the complete exploratory analysis and visualization pipeline directly in Google Colab:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Yavar-NK/Product-Recommender-ML/blob/main/notebooks/Product_Recommendations_using_word2vec.ipynb)
+
+---
+
+---
+
+### ⏰ 1️⃣ Hourly Transaction Analysis
+We analyzed the distribution of purchases throughout the day during the Exploratory Data Analysis (EDA) phase. Peak shopping hours occur between 12:00 PM and 2:00 PM, which helps in identifying key windows for user engagement.
+
+![Hourly Transactions](images/hourly_transactions.png)
+*Figure 1: Distribution of the number of transactions based on the hour of the day.*
+
+---
+
+### 🗺️ 2️⃣ Product Embedding Space Visualization (t-SNE)
+To evaluate the quality of the learned representations, we extracted the high-dimensional product vectors from the trained Word2Vec model and applied t-SNE to project them into a 2D space. Products that are frequently purchased together in the same shopping sessions naturally form distinct, meaningful clusters.
+
+![Product Embeddings t-SNE](images/tsne_visualization.png)
+*Figure 2: t-SNE projection of the trained product embeddings, showcasing learned semantic similarities.*
+
+---
+
+### 🧬 3️⃣ Advanced Dimensionality Reduction via UMAP
+In addition to t-SNE, we employed UMAP (Uniform Manifold Approximation and Projection) to better preserve both local and global structures of our product embeddings. UMAP successfully segregates the item space into dense topological clusters, confirming that the representation learning pipeline is highly stable across the entire catalog.
+
+![Product Embeddings UMAP](images/product_embeddings_umap.png)
+*Figure 3: UMAP visualization of the product embeddings, demonstrating clear global grouping and semantic structure.*
+
+
+
+
+
+
 ## How to Run 🛠️
 
 ### 1. Local Serving (FastAPI)
