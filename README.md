@@ -1,5 +1,3 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Yavar-NK/Product-Recommender-ML/blob/main/notebooks/Product_Recommendations_using_word2vec.ipynb)
-
 # End-to-End Production-Ready Product Recommender System
 
 A modular, production-grade Machine Learning pipeline that leverages NLP embeddings to build an intelligent recommendation engine. This project transitions the initial model into an enterprise-level MLOps architecture, featuring structural code separation, robust experiment tracking, and complete containerization capabilities.
