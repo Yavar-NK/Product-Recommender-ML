@@ -51,7 +51,7 @@ def train_recommender():
             
         # Log serialized artifacts and registry model directly to MLflow UI
         mlflow.log_artifact("models/products_dict.pkl")
-        mlflow.log_artifacts("models", artifact_path="word2vec_model") 
+        mlflow.log_artifacts("models", artifact_path="word2vec_model")
         
         print(f"Model trained successfully. Vocabulary size: {vocab_size}")
 
